@@ -9,7 +9,7 @@ pipeline{
       }
     }
     stage('Sequential Stage') {
-      parallel {
+      stages {
         stage('Branch A') {
             steps {
                 echo "On Branch A"
